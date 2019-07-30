@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<level>
+    <game>BasicMario</game>
+
+    <initialEntities>
+        <entity>
+            <EntityName>Mario</EntityName>
+            <setProperties>Default</setProperties>
+            <setLocation>
+                <setX>10</setX>
+                <setY>10</setY>
+            </setLocation>
+        </entity>
+
+        <entity>
+            <EntityName>Goomba</EntityName>
+            <setProperties>Default</setProperties>
+            <setLocation>
+                <setX>50</setX>
+                <setY>10</setY>
+            </setLocation>
+        </entity>
+
+        <entity>
+            <EntityName>Flag</EntityName>
+            <setProperties>Default</setProperties>
+            <setLocation>
+                <setX>100</setX>
+                <setY>10</setY>
+            </setLocation>
+        </entity>
+
+        <entity>
+            <EntityName>Floor</EntityName>
+            <setProperties>Default</setProperties>
+            <setLocation>
+                <setX>0</setX>
+                <setY>10</setY>
+            </setLocation>
+        </entity>
+    </initialEntities>
+
+</level>

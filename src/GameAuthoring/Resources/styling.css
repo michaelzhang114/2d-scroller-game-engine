@@ -1,0 +1,157 @@
+.root {
+    -fx-background-color:
+            linear-gradient(#1e1e20, #8e8e91),
+            radial-gradient(center 50%-40%, radius 200%, #47474c 45%, rgba(247, 247, 247, 0) 60%);}
+
+/*
+Splash screen styling
+ */
+#splash-screen-root {
+    -fx-base: rgb(34, 34, 34);
+    -fx-background-image: url("gray-and-red-background.jpg");
+    -fx-background-size: 1400 875;
+}
+
+#splash-screen-center-pane {
+    -fx-spacing: 30;
+    -fx-alignment: center;
+}
+
+#welcome-label {
+    -fx-text-fill: #f7f7f7;
+    -fx-font-size: 40pt;
+    -fx-font-family: Optima;
+    -fx-effect: dropshadow( gaussian , rgba(0, 0, 0, 0.7), 0,0,0,4);
+}
+
+/*
+Map view screen styling
+ */
+#map-view-root {
+    -fx-font-size: 12pt;
+    -fx-font-family: Optima;
+    -fx-base: rgb(34, 34, 34);
+}
+
+/*
+Level view screen styling
+ */
+#level-view-root {
+    -fx-font-size: 12pt;
+    -fx-font-family: Optima;
+    -fx-base: rgb(34, 34, 34);
+}
+
+/*
+Game view screen styling
+ */
+#game-view-root {
+    -fx-font-size: 12pt;
+    -fx-font-family: Optima;
+    -fx-base: rgb(34, 34, 34);
+}
+
+
+/*
+Other label styling
+ */
+#top-label {
+    -fx-text-fill: #f7f7f7;
+    -fx-font-size: 25pt;
+    -fx-alignment: center;
+    -fx-font-family: Optima;
+    -fx-effect: dropshadow( gaussian , rgba(0, 0, 0, 0.7), 0,0,0,3);
+}
+
+.label {
+    -fx-text-fill: #f7f7f7;
+    -fx-font-size: 12pt;
+    -fx-alignment: center;
+    -fx-font-family: Optima;
+    -fx-effect: dropshadow( gaussian , rgba(0, 0, 0, 0.7), 0,0,0,3);
+}
+
+/*
+Box styling
+ */
+#top-hbox {
+    -fx-effect: dropshadow( three-pass-box , rgba(34, 34, 34, 0.7), 0,0,0,3 );
+    -fx-background-color:
+            linear-gradient(#1e1e20, #8e8e91),
+            radial-gradient(center 50%-40%, radius 200%, #47474c 45%, rgba(247, 247, 247, 0) 70%);
+    -fx-padding: 10;
+    -fx-spacing: 20;
+}
+
+#bottom-hbox {
+    -fx-text-fill: #f7f7f7;
+    -fx-effect: dropshadow( three-pass-box , rgba(34, 34, 34, 0.7), 0,0,0,3 );
+    -fx-background-color:
+            linear-gradient(#353538, #9f9fa2),
+            radial-gradient(center 50%-40%, radius 200%, #47474c 45%, rgba(247, 247, 247, 0) 70%);
+    -fx-padding: 10;
+    -fx-spacing: 20;
+}
+
+#v-box {
+    -fx-effect: dropshadow( three-pass-box , rgba(34, 34, 34, 0.7), 0,0,0,3 );
+    -fx-background-color:
+            linear-gradient(#353538, #9f9fa2),
+            radial-gradient(center 50%-40%, radius 200%, #47474c 45%, rgba(247, 247, 247, 0) 70%);
+    -fx-padding: 10;
+    -fx-spacing: 20;
+}
+
+#hbox-left {
+    -fx-alignment: left;
+}
+
+#hbox-center {
+    -fx-alignment: center;
+    -fx-spacing: 20;
+}
+
+#hbox-right {
+    -fx-alignment: right;
+}
+
+/*
+Button styling
+ */
+.button {
+    -fx-text-fill: #000000;
+    -fx-font-family: Optima;
+    -fx-font-size: 12pt;
+    -fx-background-color:
+            #ffffff,
+            linear-gradient(#cacace 40%, #ffffff 100%),
+            radial-gradient(center 50%-40%, radius 200%, #f3f3f6 45%, rgba(247, 247, 247, 0) 55%);
+    -fx-background-radius: 30;
+    -fx-background-insets: 0,1,4;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 3, 0.0 , 0 , 1 );
+}
+
+#edit-button {
+    -fx-text-fill: #000000;
+    -fx-font-family: Optima;
+    -fx-font-size: 12pt;
+    -fx-background-color:
+            #ffd90b,
+            linear-gradient(#cea400 40%, #ffffff 100%),
+            radial-gradient(center 50%-40%, radius 200%, #f6ef47 45%, rgba(247, 247, 247, 0) 55%);
+    -fx-background-radius: 30;
+    -fx-background-insets: 0,1,4;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 3, 0.0 , 0 , 1 );
+}
+
+
+.button:hover {
+    -fx-background-color:
+            #000000,
+            linear-gradient(#790402 50%, #bb0502 100%),
+            radial-gradient(center 50% -40%, radius 200%, #f90406 45%, rgba(247, 247, 247, 0) 58%);
+    -fx-background-radius: 30;
+    -fx-background-insets: 0,1,4;
+    -fx-text-fill: #f7f7f7;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 3, 0.0 , 0 , 1 );
+}

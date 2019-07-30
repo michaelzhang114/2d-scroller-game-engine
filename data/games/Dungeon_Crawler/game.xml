@@ -1,0 +1,324 @@
+<makingGame.managers.EntityManager>
+  <myEntities>
+    <entry>
+      <string>levelController</string>
+      <makingGame.entity.LevelController>
+        <myInstances>
+          <entry>
+            <string>lc</string>
+            <map>
+              <entry>
+                <string>xPosition</string>
+                <string>-1000</string>
+              </entry>
+              <entry>
+                <string>xVelocity</string>
+                <string>0</string>
+              </entry>
+              <entry>
+                <string>onScreen</string>
+                <string>0</string>
+              </entry>
+              <entry>
+                <string>yAcceleration</string>
+                <string>290</string>
+              </entry>
+              <entry>
+                <string>level</string>
+                <string>0</string>
+              </entry>
+              <entry>
+                <string>imagePath</string>
+                <string>mario.png</string>
+              </entry>
+              <entry>
+                <string>currentImageIndex</string>
+                <string>0</string>
+              </entry>
+              <entry>
+                <string>yPosition</string>
+                <string>-1000</string>
+              </entry>
+              <entry>
+                <string>xScale</string>
+                <string>1</string>
+              </entry>
+              <entry>
+                <string>yVelocity</string>
+                <string>0</string>
+              </entry>
+              <entry>
+                <string>xAcceleration</string>
+                <string>0</string>
+              </entry>
+            </map>
+          </entry>
+        </myInstances>
+        <entityType>levelController</entityType>
+        <defaultProperties>
+          <javafx.util.Pair>
+            <key class="string">xPosition</key>
+            <value class="string">0</value>
+          </javafx.util.Pair>
+          <javafx.util.Pair>
+            <key class="string">yPosition</key>
+            <value class="string">0</value>
+          </javafx.util.Pair>
+          <javafx.util.Pair>
+            <key class="string">xVelocity</key>
+            <value class="string">0</value>
+          </javafx.util.Pair>
+          <javafx.util.Pair>
+            <key class="string">yVelocity</key>
+            <value class="string">0</value>
+          </javafx.util.Pair>
+          <javafx.util.Pair>
+            <key class="string">xAcceleration</key>
+            <value class="string">0</value>
+          </javafx.util.Pair>
+          <javafx.util.Pair>
+            <key class="string">yAcceleration</key>
+            <value class="string">290</value>
+          </javafx.util.Pair>
+          <javafx.util.Pair>
+            <key class="string">imagePath</key>
+            <value class="string">mario.png</value>
+          </javafx.util.Pair>
+          <javafx.util.Pair>
+            <key class="string">onScreen</key>
+            <value class="string">0</value>
+          </javafx.util.Pair>
+          <javafx.util.Pair>
+            <key class="string">level</key>
+            <value class="string">0</value>
+          </javafx.util.Pair>
+          <javafx.util.Pair>
+            <key class="string">currentImageIndex</key>
+            <value class="string">0</value>
+          </javafx.util.Pair>
+          <javafx.util.Pair>
+            <key class="string">xScale</key>
+            <value class="string">1</value>
+          </javafx.util.Pair>
+          <javafx.util.Pair>
+            <key class="string">xPosition</key>
+            <value class="string">-1000</value>
+          </javafx.util.Pair>
+          <javafx.util.Pair>
+            <key class="string">yPosition</key>
+            <value class="string">-1000</value>
+          </javafx.util.Pair>
+        </defaultProperties>
+        <FSMs/>
+      </makingGame.entity.LevelController>
+    </entry>
+    <entry>
+      <string>Crawler</string>
+      <makingGame.entity.Entity>
+        <myInstances/>
+        <entityType>Crawler</entityType>
+        <defaultProperties>
+          <javafx.util.Pair>
+            <key class="string">xPosition</key>
+            <value class="string">0</value>
+          </javafx.util.Pair>
+          <javafx.util.Pair>
+            <key class="string">yPosition</key>
+            <value class="string">0</value>
+          </javafx.util.Pair>
+          <javafx.util.Pair>
+            <key class="string">xVelocity</key>
+            <value class="string">0</value>
+          </javafx.util.Pair>
+          <javafx.util.Pair>
+            <key class="string">yVelocity</key>
+            <value class="string">0</value>
+          </javafx.util.Pair>
+          <javafx.util.Pair>
+            <key class="string">xAcceleration</key>
+            <value class="string">0</value>
+          </javafx.util.Pair>
+          <javafx.util.Pair>
+            <key class="string">yAcceleration</key>
+            <value class="string">290</value>
+          </javafx.util.Pair>
+          <javafx.util.Pair>
+            <key class="string">imagePath</key>
+            <value class="string">mario.png</value>
+          </javafx.util.Pair>
+          <javafx.util.Pair>
+            <key class="string">onScreen</key>
+            <value class="string">0</value>
+          </javafx.util.Pair>
+          <javafx.util.Pair>
+            <key class="string">level</key>
+            <value class="string">0</value>
+          </javafx.util.Pair>
+          <javafx.util.Pair>
+            <key class="string">currentImageIndex</key>
+            <value class="string">0</value>
+          </javafx.util.Pair>
+          <javafx.util.Pair>
+            <key class="string">xScale</key>
+            <value class="string">1</value>
+          </javafx.util.Pair>
+        </defaultProperties>
+        <FSMs/>
+      </makingGame.entity.Entity>
+    </entry>
+  </myEntities>
+  <mainCharacterMap/>
+  <myEventPackages>
+    <entry>
+      <string>levelController</string>
+      <list/>
+    </entry>
+    <entry>
+      <string>Crawler</string>
+      <list>
+        <makingGame.interactions.events.EventPackage>
+          <myConditions>
+            <entry>
+              <string>right</string>
+              <makingGame.interactions.events.Conditions.KeyInputCondition>
+                <myConditions>
+                  <entry>
+                    <string>Inverse</string>
+                    <boolean>false</boolean>
+                  </entry>
+                  <entry>
+                    <string>KeyCodes</string>
+                    <list>
+                      <string>D</string>
+                    </list>
+                  </entry>
+                </myConditions>
+              </makingGame.interactions.events.Conditions.KeyInputCondition>
+            </entry>
+          </myConditions>
+          <myActions>
+            <entry>
+              <string>xLocMove</string>
+              <makingGame.interactions.action.NumericalAction>
+                <entityToAffect>MYSELF</entityToAffect>
+                <propertyToBeModified>xVelocity</propertyToBeModified>
+                <valueToUse>600</valueToUse>
+                <myOperator>+=</myOperator>
+              </makingGame.interactions.action.NumericalAction>
+            </entry>
+            <entry>
+              <string>xLocMoveAcc</string>
+              <makingGame.interactions.action.NumericalAction>
+                <entityToAffect>MYSELF</entityToAffect>
+                <propertyToBeModified>xAcceleration</propertyToBeModified>
+                <valueToUse>2500</valueToUse>
+                <myOperator>+=</myOperator>
+              </makingGame.interactions.action.NumericalAction>
+            </entry>
+          </myActions>
+          <myId>moveRight</myId>
+        </makingGame.interactions.events.EventPackage>
+        <makingGame.interactions.events.EventPackage>
+          <myConditions>
+            <entry>
+              <string>left</string>
+              <makingGame.interactions.events.Conditions.KeyInputCondition>
+                <myConditions>
+                  <entry>
+                    <string>Inverse</string>
+                    <boolean>false</boolean>
+                  </entry>
+                  <entry>
+                    <string>KeyCodes</string>
+                    <list>
+                      <string>A</string>
+                    </list>
+                  </entry>
+                </myConditions>
+              </makingGame.interactions.events.Conditions.KeyInputCondition>
+            </entry>
+          </myConditions>
+          <myActions>
+            <entry>
+              <string>xLocMoveL</string>
+              <makingGame.interactions.action.NumericalAction>
+                <entityToAffect>MYSELF</entityToAffect>
+                <propertyToBeModified>xVelocity</propertyToBeModified>
+                <valueToUse>-600</valueToUse>
+                <myOperator>+=</myOperator>
+              </makingGame.interactions.action.NumericalAction>
+            </entry>
+            <entry>
+              <string>xLocMoveLAcc</string>
+              <makingGame.interactions.action.NumericalAction>
+                <entityToAffect>MYSELF</entityToAffect>
+                <propertyToBeModified>xAcceleration</propertyToBeModified>
+                <valueToUse>-2500</valueToUse>
+                <myOperator>+=</myOperator>
+              </makingGame.interactions.action.NumericalAction>
+            </entry>
+          </myActions>
+          <myId>moveLeft</myId>
+        </makingGame.interactions.events.EventPackage>
+        <makingGame.interactions.events.EventPackage>
+          <myConditions/>
+          <myActions>
+            <entry>
+              <string>yLocMoveU</string>
+              <makingGame.interactions.action.NumericalAction>
+                <entityToAffect>MYSELF</entityToAffect>
+                <propertyToBeModified>yVelocity</propertyToBeModified>
+                <valueToUse>-250</valueToUse>
+                <myOperator>=</myOperator>
+              </makingGame.interactions.action.NumericalAction>
+            </entry>
+          </myActions>
+          <myId>moveUp</myId>
+        </makingGame.interactions.events.EventPackage>
+        <makingGame.interactions.events.EventPackage>
+          <myConditions>
+            <entry>
+              <string>down</string>
+              <makingGame.interactions.events.Conditions.KeyInputCondition>
+                <myConditions>
+                  <entry>
+                    <string>Inverse</string>
+                    <boolean>false</boolean>
+                  </entry>
+                  <entry>
+                    <string>KeyCodes</string>
+                    <list>
+                      <string>S</string>
+                    </list>
+                  </entry>
+                </myConditions>
+              </makingGame.interactions.events.Conditions.KeyInputCondition>
+            </entry>
+          </myConditions>
+          <myActions>
+            <entry>
+              <string>yLocMoveD</string>
+              <makingGame.interactions.action.NumericalAction>
+                <entityToAffect>MYSELF</entityToAffect>
+                <propertyToBeModified>yPosition</propertyToBeModified>
+                <valueToUse>10</valueToUse>
+                <myOperator>+=</myOperator>
+              </makingGame.interactions.action.NumericalAction>
+            </entry>
+          </myActions>
+          <myId>moveDown</myId>
+        </makingGame.interactions.events.EventPackage>
+      </list>
+    </entry>
+  </myEventPackages>
+  <myScreenSize>
+    <key class="double">1280.0</key>
+    <value class="double">640.0</value>
+  </myScreenSize>
+  <myBackgroundImagePath>
+    <entry>
+      <string>0</string>
+      <string>background.png</string>
+    </entry>
+  </myBackgroundImagePath>
+</makingGame.managers.EntityManager>

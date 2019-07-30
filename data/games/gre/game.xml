@@ -1,0 +1,249 @@
+<makingGame.managers.EntityManager>
+  <myEntities>
+    <entry>
+      <string>yoshi</string>
+      <makingGame.entity.Entity>
+        <myInstances>
+          <entry>
+            <string>0</string>
+            <map>
+              <entry>
+                <string>xPosition</string>
+                <string>250.0</string>
+              </entry>
+              <entry>
+                <string>xVelocity</string>
+                <string>0</string>
+              </entry>
+              <entry>
+                <string>onScreen</string>
+                <string>0</string>
+              </entry>
+              <entry>
+                <string>yAcceleration</string>
+                <string>290</string>
+              </entry>
+              <entry>
+                <string>level</string>
+                <string>0</string>
+              </entry>
+              <entry>
+                <string>imagePath</string>
+                <string>mmarioyoshi.png</string>
+              </entry>
+              <entry>
+                <string>currentImageIndex</string>
+                <string>0</string>
+              </entry>
+              <entry>
+                <string>yPosition</string>
+                <string>350.0</string>
+              </entry>
+              <entry>
+                <string>xScale</string>
+                <string>1</string>
+              </entry>
+              <entry>
+                <string>yVelocity</string>
+                <string>0</string>
+              </entry>
+              <entry>
+                <string>xAcceleration</string>
+                <string>0</string>
+              </entry>
+            </map>
+          </entry>
+        </myInstances>
+        <entityType>yoshi</entityType>
+        <defaultProperties>
+          <javafx.util.Pair>
+            <key class="string">xPosition</key>
+            <value class="string">0</value>
+          </javafx.util.Pair>
+          <javafx.util.Pair>
+            <key class="string">yPosition</key>
+            <value class="string">0</value>
+          </javafx.util.Pair>
+          <javafx.util.Pair>
+            <key class="string">xVelocity</key>
+            <value class="string">0</value>
+          </javafx.util.Pair>
+          <javafx.util.Pair>
+            <key class="string">yVelocity</key>
+            <value class="string">0</value>
+          </javafx.util.Pair>
+          <javafx.util.Pair>
+            <key class="string">xAcceleration</key>
+            <value class="string">0</value>
+          </javafx.util.Pair>
+          <javafx.util.Pair>
+            <key class="string">yAcceleration</key>
+            <value class="string">290</value>
+          </javafx.util.Pair>
+          <javafx.util.Pair>
+            <key class="string">imagePath</key>
+            <value class="string">mario.png</value>
+          </javafx.util.Pair>
+          <javafx.util.Pair>
+            <key class="string">onScreen</key>
+            <value class="string">0</value>
+          </javafx.util.Pair>
+          <javafx.util.Pair>
+            <key class="string">level</key>
+            <value class="string">0</value>
+          </javafx.util.Pair>
+          <javafx.util.Pair>
+            <key class="string">currentImageIndex</key>
+            <value class="string">0</value>
+          </javafx.util.Pair>
+          <javafx.util.Pair>
+            <key class="string">xScale</key>
+            <value class="string">1</value>
+          </javafx.util.Pair>
+        </defaultProperties>
+        <FSMs/>
+      </makingGame.entity.Entity>
+    </entry>
+    <entry>
+      <string>levelController</string>
+      <makingGame.entity.LevelController>
+        <myInstances>
+          <entry>
+            <string>lc</string>
+            <map>
+              <entry>
+                <string>xPosition</string>
+                <string>-1000</string>
+              </entry>
+              <entry>
+                <string>xVelocity</string>
+                <string>0</string>
+              </entry>
+              <entry>
+                <string>onScreen</string>
+                <string>0</string>
+              </entry>
+              <entry>
+                <string>yAcceleration</string>
+                <string>290</string>
+              </entry>
+              <entry>
+                <string>level</string>
+                <string>0</string>
+              </entry>
+              <entry>
+                <string>imagePath</string>
+                <string>mario.png</string>
+              </entry>
+              <entry>
+                <string>currentImageIndex</string>
+                <string>0</string>
+              </entry>
+              <entry>
+                <string>yPosition</string>
+                <string>-1000</string>
+              </entry>
+              <entry>
+                <string>xScale</string>
+                <string>1</string>
+              </entry>
+              <entry>
+                <string>yVelocity</string>
+                <string>0</string>
+              </entry>
+              <entry>
+                <string>xAcceleration</string>
+                <string>0</string>
+              </entry>
+            </map>
+          </entry>
+        </myInstances>
+        <entityType>levelController</entityType>
+        <defaultProperties>
+          <javafx.util.Pair>
+            <key class="string">xPosition</key>
+            <value class="string">0</value>
+          </javafx.util.Pair>
+          <javafx.util.Pair>
+            <key class="string">yPosition</key>
+            <value class="string">0</value>
+          </javafx.util.Pair>
+          <javafx.util.Pair>
+            <key class="string">xVelocity</key>
+            <value class="string">0</value>
+          </javafx.util.Pair>
+          <javafx.util.Pair>
+            <key class="string">yVelocity</key>
+            <value class="string">0</value>
+          </javafx.util.Pair>
+          <javafx.util.Pair>
+            <key class="string">xAcceleration</key>
+            <value class="string">0</value>
+          </javafx.util.Pair>
+          <javafx.util.Pair>
+            <key class="string">yAcceleration</key>
+            <value class="string">290</value>
+          </javafx.util.Pair>
+          <javafx.util.Pair>
+            <key class="string">imagePath</key>
+            <value class="string">mario.png</value>
+          </javafx.util.Pair>
+          <javafx.util.Pair>
+            <key class="string">onScreen</key>
+            <value class="string">0</value>
+          </javafx.util.Pair>
+          <javafx.util.Pair>
+            <key class="string">level</key>
+            <value class="string">0</value>
+          </javafx.util.Pair>
+          <javafx.util.Pair>
+            <key class="string">currentImageIndex</key>
+            <value class="string">0</value>
+          </javafx.util.Pair>
+          <javafx.util.Pair>
+            <key class="string">xScale</key>
+            <value class="string">1</value>
+          </javafx.util.Pair>
+          <javafx.util.Pair>
+            <key class="string">xPosition</key>
+            <value class="string">-1000</value>
+          </javafx.util.Pair>
+          <javafx.util.Pair>
+            <key class="string">yPosition</key>
+            <value class="string">-1000</value>
+          </javafx.util.Pair>
+        </defaultProperties>
+        <FSMs/>
+      </makingGame.entity.LevelController>
+    </entry>
+  </myEntities>
+  <mainCharacterMap>
+    <entry>
+      <string>0</string>
+      <javafx.util.Pair>
+        <key class="string">yoshi</key>
+        <value class="string">0</value>
+      </javafx.util.Pair>
+    </entry>
+  </mainCharacterMap>
+  <myEventPackages>
+    <entry>
+      <string>yoshi</string>
+      <list/>
+    </entry>
+    <entry>
+      <string>levelController</string>
+      <list/>
+    </entry>
+  </myEventPackages>
+  <myScreenSize>
+    <key class="double">1040.0</key>
+    <value class="double">650.0</value>
+  </myScreenSize>
+  <myBackgroundImagePath>
+    <entry>
+      <string>0</string>
+      <string>images5.jpg</string>
+    </entry>
+  </myBackgroundImagePath>
+</makingGame.managers.EntityManager>

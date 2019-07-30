@@ -1,0 +1,6 @@
+.root {
+    -fx-font-size: 14pt;
+    -fx-font-family: "Georgia";
+    -fx-base: rgb(193, 240, 240);
+    -fx-background: rgb(230, 255, 240);
+}

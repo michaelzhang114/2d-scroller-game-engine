@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<game>
+    <gameName>BasicMario</gameName>
+
+    <gameProperties>
+        <xSize>500</xSize>
+        <ySize>500</ySize>
+        <gravityConstant>9.8<gravityConstant>
+    </gameProperties>
+
+    <entities>
+        <entity>
+            <name>Mario</name>
+            <image>mario.png</image>
+            <properties>
+                <setValue>
+                    <valueName>Lives</valueName>
+                    <value>1</value>
+                </setValue>
+            </properties>
+        </entity>
+
+        <entity>
+            <name>Goomba</name>
+            <image>goomba.png</image>
+        </entity>
+
+        <entity>
+            <entityName>Floor</entityName>
+            <image>floor.png</image>
+        </entity>
+
+        <entity>
+            <entityName>Flag</entityName>
+            <image>flag.png</image>
+        </entity>
+    </entities>
+
+    <events>
+        <event>
+            <conditionList>
+                <collision>
+                    <obj1>Mario</obj1>
+                    <obj2>Flag</obj2>
+                </collision>
+            </conditionList>
+            <actions>
+                    <clear></clear>
+                    <consolePrint></consolePrint>
+            </actions>
+        </event>
+
+        <event>
+            <conditionList>
+                <time>Continuous</time>
+            </conditionList>
+            <actions>
+                <decreaseXAcceleration>9.8</decreaseXAcceleration>
+                <move>
+                    <entity>Goomba</entity>
+                    <distance>5</distance>
+                </move>
+            </actions>
+        </event>
+
+        <event>
+            <conditionList>
+                <collision>
+                    <obj1>Mario</obj1>
+                    <obj2>Goomba</obj2>
+                </collision>
+                <entityState>
+                    <entity>Mario</entity>
+                    <valueName>YVelocity</valueName>
+                    <condition>lessthan</condition>
+                    <value>0</value>
+                </entityState>
+            </conditionList>
+            <actions>
+                <destroy>Goomba</destroy>
+                <increaseScore>1</increaseScore>
+                <playSound>stomp.wav</playSound>
+            </actions>
+        </event>
+
+        <event>
+            <conditionList>
+                <collision>
+                    <obj1>Mario</obj1>
+                    <obj2>Goomba</obj2>
+                </collision>
+                <entityState>
+                    <entity>Mario</entity>
+                    <valueName>YVelocity</valueName>
+                    <condition>greaterthan</condition>
+                    <value>0</value>
+                </entityState>
+            </conditionList>
+            <actions>
+                <changeProperty>
+                    <entity>Mario</entity>
+                    <valueName>Lives</valueName>
+                    <changeValue>plusEqual</changeValue>
+                    <value>-1</value>
+                </changeProperty>
+            </actions>
+        </event>
+
+        <event>
+            <conditionList>
+                <collision>
+                    <obj1>Mario</obj1>
+                    <obj2>Floor</obj2>
+                </collision>
+            </conditionList>
+            <actions>
+                <changeProperty>
+                    <entity>Mario</entity>
+                    <valueName>YVelocity</valueName>
+                    <setValue>0</setValue>
+                </changeProperty>
+            </actions>
+        </event>
+
+        <event>
+            <conditionList>
+                <pressKey>
+                    <key>left</key>
+                </pressKey>
+            </conditionList>
+            <actions>
+                <entityState>
+                    <entity>Mario</entity>
+                    <valueName>Xacceleration</valueName>
+                    <setValue>-1</setValue>
+                </entityState>
+            </actions>
+        </event>
+
+        <event>
+            <conditionList>
+                <pressKey>
+                    <key>right</key>
+                </pressKey>
+            </conditionList>
+            <actions>
+                <entityState>
+                    <entity>Mario</entity>
+                    <valueName>Xacceleration</valueName>
+                    <setValue>1</setValue>
+                </entityState>
+            </actions>
+        </event>
+
+        <event>
+            <conditionList>
+                <pressKey>
+                    <key>up</key>
+                </pressKey>
+                <entityState>
+                    <entity>Mario</entity>
+                    <valueName>YVelocity</valueName>
+                    <condition>Equals</condition>
+                    <value>0</value>
+                </entityState>
+            </conditionList>
+            <actions>
+                <entityState>
+                    <entity>Mario</entity>
+                    <valueName>Yacceleration</valueName>
+                    <changeValue>plusEqual</changeValue>
+                    <value>5</value>
+                </entityState>
+            </actions>
+        </event>
+    </events>
+
+</game>

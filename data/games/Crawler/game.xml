@@ -1,0 +1,833 @@
+<makingGame.managers.EntityManager>
+  <myEntities>
+    <entry>
+      <string>Isaac</string>
+      <makingGame.entity.Entity>
+        <myInstances>
+          <entry>
+            <string>i1</string>
+            <map>
+              <entry>
+                <string>xPosition</string>
+                <string>500</string>
+              </entry>
+              <entry>
+                <string>xVelocity</string>
+                <string>0</string>
+              </entry>
+              <entry>
+                <string>onScreen</string>
+                <string>0</string>
+              </entry>
+              <entry>
+                <string>yAcceleration</string>
+                <string>0</string>
+              </entry>
+              <entry>
+                <string>level</string>
+                <string>0</string>
+              </entry>
+              <entry>
+                <string>imagePath</string>
+                <string>Isaac.png</string>
+              </entry>
+              <entry>
+                <string>currentImageIndex</string>
+                <string>0</string>
+              </entry>
+              <entry>
+                <string>yPosition</string>
+                <string>200</string>
+              </entry>
+              <entry>
+                <string>xScale</string>
+                <string>1</string>
+              </entry>
+              <entry>
+                <string>state</string>
+                <string>notattacking</string>
+              </entry>
+              <entry>
+                <string>yVelocity</string>
+                <string>0</string>
+              </entry>
+              <entry>
+                <string>xAcceleration</string>
+                <string>0</string>
+              </entry>
+            </map>
+          </entry>
+        </myInstances>
+        <entityType>Isaac</entityType>
+        <defaultProperties>
+          <javafx.util.Pair>
+            <key class="string">xPosition</key>
+            <value class="string">0</value>
+          </javafx.util.Pair>
+          <javafx.util.Pair>
+            <key class="string">yPosition</key>
+            <value class="string">0</value>
+          </javafx.util.Pair>
+          <javafx.util.Pair>
+            <key class="string">xVelocity</key>
+            <value class="string">0</value>
+          </javafx.util.Pair>
+          <javafx.util.Pair>
+            <key class="string">yVelocity</key>
+            <value class="string">0</value>
+          </javafx.util.Pair>
+          <javafx.util.Pair>
+            <key class="string">xAcceleration</key>
+            <value class="string">0</value>
+          </javafx.util.Pair>
+          <javafx.util.Pair>
+            <key class="string">yAcceleration</key>
+            <value class="string">0</value>
+          </javafx.util.Pair>
+          <javafx.util.Pair>
+            <key class="string">imagePath</key>
+            <value class="string">mario.png</value>
+          </javafx.util.Pair>
+          <javafx.util.Pair>
+            <key class="string">onScreen</key>
+            <value class="string">0</value>
+          </javafx.util.Pair>
+          <javafx.util.Pair>
+            <key class="string">level</key>
+            <value class="string">0</value>
+          </javafx.util.Pair>
+          <javafx.util.Pair>
+            <key class="string">currentImageIndex</key>
+            <value class="string">0</value>
+          </javafx.util.Pair>
+          <javafx.util.Pair>
+            <key class="string">xScale</key>
+            <value class="string">1</value>
+          </javafx.util.Pair>
+          <javafx.util.Pair>
+            <key class="string">state</key>
+            <value class="string">notattacking</value>
+          </javafx.util.Pair>
+        </defaultProperties>
+<<<<<<< HEAD
+        <FSMs/>
+=======
+        <FSMs>
+          <FSM.presetFSMs.LeftRightFSM>
+            <currentstate>
+              <statename>rest</statename>
+              <triggers>
+                <makingGame.interactions.events.conditionals.Conditionals>
+                  <Signatures>
+                    <string>KeyInput</string>
+                    <string>Left</string>
+                    <string>pressed</string>
+                  </Signatures>
+                </makingGame.interactions.events.conditionals.Conditionals>
+                <makingGame.interactions.events.conditionals.Conditionals>
+                  <Signatures>
+                    <string>KeyInput</string>
+                    <string>Right</string>
+                    <string>pressed</string>
+                  </Signatures>
+                </makingGame.interactions.events.conditionals.Conditionals>
+              </triggers>
+              <actionmap>
+                <entry>
+                  <makingGame.interactions.events.conditionals.Conditionals reference="../../../triggers/makingGame.interactions.events.conditionals.Conditionals"/>
+                  <set>
+                    <makingGame.interactions.action.NumericalAction>
+                      <entityToAffect></entityToAffect>
+                      <propertyToBeModified>xScale</propertyToBeModified>
+                      <valueToUse>-1</valueToUse>
+                      <myOperator>=</myOperator>
+                    </makingGame.interactions.action.NumericalAction>
+                    <makingGame.interactions.action.NumericalAction>
+                      <entityToAffect></entityToAffect>
+                      <propertyToBeModified>currentImageIndex</propertyToBeModified>
+                      <valueToUse>1</valueToUse>
+                      <myOperator>=</myOperator>
+                    </makingGame.interactions.action.NumericalAction>
+                    <makingGame.interactions.action.NumericalAction>
+                      <entityToAffect></entityToAffect>
+                      <propertyToBeModified>xVelocity</propertyToBeModified>
+                      <valueToUse>-100</valueToUse>
+                      <myOperator>=</myOperator>
+                    </makingGame.interactions.action.NumericalAction>
+                  </set>
+                </entry>
+                <entry>
+                  <makingGame.interactions.events.conditionals.Conditionals reference="../../../triggers/makingGame.interactions.events.conditionals.Conditionals[2]"/>
+                  <set>
+                    <makingGame.interactions.action.NumericalAction>
+                      <entityToAffect></entityToAffect>
+                      <propertyToBeModified>xScale</propertyToBeModified>
+                      <valueToUse>1</valueToUse>
+                      <myOperator>=</myOperator>
+                    </makingGame.interactions.action.NumericalAction>
+                    <makingGame.interactions.action.NumericalAction>
+                      <entityToAffect></entityToAffect>
+                      <propertyToBeModified>xVelocity</propertyToBeModified>
+                      <valueToUse>100</valueToUse>
+                      <myOperator>=</myOperator>
+                    </makingGame.interactions.action.NumericalAction>
+                    <makingGame.interactions.action.NumericalAction>
+                      <entityToAffect></entityToAffect>
+                      <propertyToBeModified>currentImageIndex</propertyToBeModified>
+                      <valueToUse>1</valueToUse>
+                      <myOperator>=</myOperator>
+                    </makingGame.interactions.action.NumericalAction>
+                  </set>
+                </entry>
+              </actionmap>
+              <transitionmap>
+                <entry>
+                  <makingGame.interactions.events.conditionals.Conditionals reference="../../../triggers/makingGame.interactions.events.conditionals.Conditionals"/>
+                  <FSM.FSM__State>
+                    <statename>left</statename>
+                    <triggers>
+                      <makingGame.interactions.events.conditionals.Conditionals reference="../../../../../triggers/makingGame.interactions.events.conditionals.Conditionals[2]"/>
+                      <makingGame.interactions.events.conditionals.Conditionals>
+                        <Signatures>
+                          <string>KeyInput</string>
+                          <string>Left</string>
+                          <string>released</string>
+                        </Signatures>
+                      </makingGame.interactions.events.conditionals.Conditionals>
+                      <makingGame.interactions.events.conditionals.Conditionals>
+                        <Signatures>
+                          <string>AlwaysTrueCondition</string>
+                        </Signatures>
+                      </makingGame.interactions.events.conditionals.Conditionals>
+                    </triggers>
+                    <actionmap>
+                      <entry>
+                        <makingGame.interactions.events.conditionals.Conditionals reference="../../../triggers/makingGame.interactions.events.conditionals.Conditionals[2]"/>
+                        <set>
+                          <makingGame.interactions.action.NumericalAction>
+                            <entityToAffect></entityToAffect>
+                            <propertyToBeModified>currentImageIndex</propertyToBeModified>
+                            <valueToUse>0</valueToUse>
+                            <myOperator>=</myOperator>
+                          </makingGame.interactions.action.NumericalAction>
+                          <makingGame.interactions.action.NumericalAction>
+                            <entityToAffect></entityToAffect>
+                            <propertyToBeModified>xVelocity</propertyToBeModified>
+                            <valueToUse>0</valueToUse>
+                            <myOperator>=</myOperator>
+                          </makingGame.interactions.action.NumericalAction>
+                        </set>
+                      </entry>
+                      <entry>
+                        <makingGame.interactions.events.conditionals.Conditionals reference="../../../triggers/makingGame.interactions.events.conditionals.Conditionals[3]"/>
+                        <set>
+                          <makingGame.interactions.action.NumericalAction>
+                            <entityToAffect></entityToAffect>
+                            <propertyToBeModified>currentImageIndex</propertyToBeModified>
+                            <valueToUse>1</valueToUse>
+                            <myOperator>=</myOperator>
+                          </makingGame.interactions.action.NumericalAction>
+                          <makingGame.interactions.action.NumericalAction>
+                            <entityToAffect></entityToAffect>
+                            <propertyToBeModified>xScale</propertyToBeModified>
+                            <valueToUse>-1</valueToUse>
+                            <myOperator>=</myOperator>
+                          </makingGame.interactions.action.NumericalAction>
+                        </set>
+                      </entry>
+                      <entry>
+                        <makingGame.interactions.events.conditionals.Conditionals reference="../../../../../../triggers/makingGame.interactions.events.conditionals.Conditionals[2]"/>
+                        <set reference="../../../../../../actionmap/entry[2]/set"/>
+                      </entry>
+                    </actionmap>
+                    <transitionmap>
+                      <entry>
+                        <makingGame.interactions.events.conditionals.Conditionals reference="../../../triggers/makingGame.interactions.events.conditionals.Conditionals[2]"/>
+                        <FSM.FSM__State reference="../../../../../.."/>
+                      </entry>
+                      <entry>
+                        <makingGame.interactions.events.conditionals.Conditionals reference="../../../triggers/makingGame.interactions.events.conditionals.Conditionals[3]"/>
+                        <FSM.FSM__State reference="../../.."/>
+                      </entry>
+                      <entry>
+                        <makingGame.interactions.events.conditionals.Conditionals reference="../../../../../../triggers/makingGame.interactions.events.conditionals.Conditionals[2]"/>
+                        <FSM.FSM__State>
+                          <statename>leftright</statename>
+                          <triggers>
+                            <makingGame.interactions.events.conditionals.Conditionals reference="../../../../../triggers/makingGame.interactions.events.conditionals.Conditionals[2]"/>
+                            <makingGame.interactions.events.conditionals.Conditionals>
+                              <Signatures>
+                                <string>KeyInput</string>
+                                <string>Right</string>
+                                <string>released</string>
+                              </Signatures>
+                            </makingGame.interactions.events.conditionals.Conditionals>
+                            <makingGame.interactions.events.conditionals.Conditionals reference="../../../../../triggers/makingGame.interactions.events.conditionals.Conditionals[3]"/>
+                          </triggers>
+                          <actionmap>
+                            <entry>
+                              <makingGame.interactions.events.conditionals.Conditionals reference="../../../../../../triggers/makingGame.interactions.events.conditionals.Conditionals[2]"/>
+                              <set reference="../../../../../../../../../actionmap/entry[2]/set"/>
+                            </entry>
+                            <entry>
+                              <makingGame.interactions.events.conditionals.Conditionals reference="../../../triggers/makingGame.interactions.events.conditionals.Conditionals[2]"/>
+                              <set reference="../../../../../../../../../actionmap/entry/set"/>
+                            </entry>
+                            <entry>
+                              <makingGame.interactions.events.conditionals.Conditionals reference="../../../../../../triggers/makingGame.interactions.events.conditionals.Conditionals[3]"/>
+                              <set>
+                                <makingGame.interactions.action.NumericalAction>
+                                  <entityToAffect></entityToAffect>
+                                  <propertyToBeModified>currentImageIndex</propertyToBeModified>
+                                  <valueToUse>1</valueToUse>
+                                  <myOperator>=</myOperator>
+                                </makingGame.interactions.action.NumericalAction>
+                              </set>
+                            </entry>
+                          </actionmap>
+                          <transitionmap>
+                            <entry>
+                              <makingGame.interactions.events.conditionals.Conditionals reference="../../../../../../triggers/makingGame.interactions.events.conditionals.Conditionals[2]"/>
+                              <FSM.FSM__State>
+                                <statename>right</statename>
+                                <triggers>
+                                  <makingGame.interactions.events.conditionals.Conditionals reference="../../../../../../../../../../../triggers/makingGame.interactions.events.conditionals.Conditionals"/>
+                                  <makingGame.interactions.events.conditionals.Conditionals reference="../../../../../triggers/makingGame.interactions.events.conditionals.Conditionals[2]"/>
+                                  <makingGame.interactions.events.conditionals.Conditionals reference="../../../../../../../../triggers/makingGame.interactions.events.conditionals.Conditionals[3]"/>
+                                </triggers>
+                                <actionmap>
+                                  <entry>
+                                    <makingGame.interactions.events.conditionals.Conditionals reference="../../../../../../../../../../../../triggers/makingGame.interactions.events.conditionals.Conditionals"/>
+                                    <set reference="../../../../../../../../../../../../actionmap/entry/set"/>
+                                  </entry>
+                                  <entry>
+                                    <makingGame.interactions.events.conditionals.Conditionals reference="../../../../../../triggers/makingGame.interactions.events.conditionals.Conditionals[2]"/>
+                                    <set reference="../../../../../../../../../actionmap/entry/set"/>
+                                  </entry>
+                                  <entry>
+                                    <makingGame.interactions.events.conditionals.Conditionals reference="../../../../../../../../../triggers/makingGame.interactions.events.conditionals.Conditionals[3]"/>
+                                    <set>
+                                      <makingGame.interactions.action.NumericalAction>
+                                        <entityToAffect></entityToAffect>
+                                        <propertyToBeModified>xScale</propertyToBeModified>
+                                        <valueToUse>1</valueToUse>
+                                        <myOperator>=</myOperator>
+                                      </makingGame.interactions.action.NumericalAction>
+                                      <makingGame.interactions.action.NumericalAction>
+                                        <entityToAffect></entityToAffect>
+                                        <propertyToBeModified>currentImageIndex</propertyToBeModified>
+                                        <valueToUse>1</valueToUse>
+                                        <myOperator>=</myOperator>
+                                      </makingGame.interactions.action.NumericalAction>
+                                    </set>
+                                  </entry>
+                                </actionmap>
+                                <transitionmap>
+                                  <entry>
+                                    <makingGame.interactions.events.conditionals.Conditionals reference="../../../../../../../../../../../../triggers/makingGame.interactions.events.conditionals.Conditionals"/>
+                                    <FSM.FSM__State reference="../../../../../.."/>
+                                  </entry>
+                                  <entry>
+                                    <makingGame.interactions.events.conditionals.Conditionals reference="../../../../../../triggers/makingGame.interactions.events.conditionals.Conditionals[2]"/>
+                                    <FSM.FSM__State reference="../../../../../../../../../../../.."/>
+                                  </entry>
+                                  <entry>
+                                    <makingGame.interactions.events.conditionals.Conditionals reference="../../../../../../../../../triggers/makingGame.interactions.events.conditionals.Conditionals[3]"/>
+                                    <FSM.FSM__State reference="../../.."/>
+                                  </entry>
+                                </transitionmap>
+                              </FSM.FSM__State>
+                            </entry>
+                            <entry>
+                              <makingGame.interactions.events.conditionals.Conditionals reference="../../../triggers/makingGame.interactions.events.conditionals.Conditionals[2]"/>
+                              <FSM.FSM__State reference="../../../../../.."/>
+                            </entry>
+                            <entry>
+                              <makingGame.interactions.events.conditionals.Conditionals reference="../../../../../../triggers/makingGame.interactions.events.conditionals.Conditionals[3]"/>
+                              <FSM.FSM__State reference="../../.."/>
+                            </entry>
+                          </transitionmap>
+                        </FSM.FSM__State>
+                      </entry>
+                    </transitionmap>
+                  </FSM.FSM__State>
+                </entry>
+                <entry>
+                  <makingGame.interactions.events.conditionals.Conditionals reference="../../../triggers/makingGame.interactions.events.conditionals.Conditionals[2]"/>
+                  <FSM.FSM__State reference="../../entry/FSM.FSM__State/transitionmap/entry[3]/FSM.FSM__State/transitionmap/entry/FSM.FSM__State"/>
+                </entry>
+              </transitionmap>
+            </currentstate>
+          </FSM.presetFSMs.LeftRightFSM>
+          <FSM.presetFSMs.UpDownFSM>
+            <currentstate>
+              <statename>rest</statename>
+              <triggers>
+                <makingGame.interactions.events.conditionals.Conditionals>
+                  <Signatures>
+                    <string>KeyInput</string>
+                    <string>Up</string>
+                    <string>pressed</string>
+                  </Signatures>
+                </makingGame.interactions.events.conditionals.Conditionals>
+                <makingGame.interactions.events.conditionals.Conditionals>
+                  <Signatures>
+                    <string>KeyInput</string>
+                    <string>Down</string>
+                    <string>pressed</string>
+                  </Signatures>
+                </makingGame.interactions.events.conditionals.Conditionals>
+              </triggers>
+              <actionmap>
+                <entry>
+                  <makingGame.interactions.events.conditionals.Conditionals reference="../../../triggers/makingGame.interactions.events.conditionals.Conditionals[2]"/>
+                  <set>
+                    <makingGame.interactions.action.NumericalAction>
+                      <entityToAffect></entityToAffect>
+                      <propertyToBeModified>yVelocity</propertyToBeModified>
+                      <valueToUse>300</valueToUse>
+                      <myOperator>=</myOperator>
+                    </makingGame.interactions.action.NumericalAction>
+                    <makingGame.interactions.action.NumericalAction>
+                      <entityToAffect></entityToAffect>
+                      <propertyToBeModified>currentImageIndex</propertyToBeModified>
+                      <valueToUse>1</valueToUse>
+                      <myOperator>=</myOperator>
+                    </makingGame.interactions.action.NumericalAction>
+                    <makingGame.interactions.action.NumericalAction>
+                      <entityToAffect></entityToAffect>
+                      <propertyToBeModified>xScale</propertyToBeModified>
+                      <valueToUse>1</valueToUse>
+                      <myOperator>=</myOperator>
+                    </makingGame.interactions.action.NumericalAction>
+                  </set>
+                </entry>
+                <entry>
+                  <makingGame.interactions.events.conditionals.Conditionals reference="../../../triggers/makingGame.interactions.events.conditionals.Conditionals"/>
+                  <set>
+                    <makingGame.interactions.action.NumericalAction>
+                      <entityToAffect></entityToAffect>
+                      <propertyToBeModified>yVelocity</propertyToBeModified>
+                      <valueToUse>-300</valueToUse>
+                      <myOperator>=</myOperator>
+                    </makingGame.interactions.action.NumericalAction>
+                    <makingGame.interactions.action.NumericalAction>
+                      <entityToAffect></entityToAffect>
+                      <propertyToBeModified>currentImageIndex</propertyToBeModified>
+                      <valueToUse>1</valueToUse>
+                      <myOperator>=</myOperator>
+                    </makingGame.interactions.action.NumericalAction>
+                    <makingGame.interactions.action.NumericalAction>
+                      <entityToAffect></entityToAffect>
+                      <propertyToBeModified>xScale</propertyToBeModified>
+                      <valueToUse>-1</valueToUse>
+                      <myOperator>=</myOperator>
+                    </makingGame.interactions.action.NumericalAction>
+                  </set>
+                </entry>
+              </actionmap>
+              <transitionmap>
+                <entry>
+                  <makingGame.interactions.events.conditionals.Conditionals reference="../../../triggers/makingGame.interactions.events.conditionals.Conditionals[2]"/>
+                  <FSM.FSM__State>
+                    <statename>right</statename>
+                    <triggers>
+                      <makingGame.interactions.events.conditionals.Conditionals reference="../../../../../triggers/makingGame.interactions.events.conditionals.Conditionals"/>
+                      <makingGame.interactions.events.conditionals.Conditionals>
+                        <Signatures>
+                          <string>KeyInput</string>
+                          <string>Down</string>
+                          <string>released</string>
+                        </Signatures>
+                      </makingGame.interactions.events.conditionals.Conditionals>
+                      <makingGame.interactions.events.conditionals.Conditionals reference="../../../../../../../FSM.presetFSMs.LeftRightFSM/currentstate/transitionmap/entry/FSM.FSM__State/triggers/makingGame.interactions.events.conditionals.Conditionals[3]"/>
+                    </triggers>
+                    <actionmap>
+                      <entry>
+                        <makingGame.interactions.events.conditionals.Conditionals reference="../../../triggers/makingGame.interactions.events.conditionals.Conditionals[2]"/>
+                        <set>
+                          <makingGame.interactions.action.NumericalAction>
+                            <entityToAffect></entityToAffect>
+                            <propertyToBeModified>yVelocity</propertyToBeModified>
+                            <valueToUse>0</valueToUse>
+                            <myOperator>=</myOperator>
+                          </makingGame.interactions.action.NumericalAction>
+                          <makingGame.interactions.action.NumericalAction>
+                            <entityToAffect></entityToAffect>
+                            <propertyToBeModified>currentImageIndex</propertyToBeModified>
+                            <valueToUse>0</valueToUse>
+                            <myOperator>=</myOperator>
+                          </makingGame.interactions.action.NumericalAction>
+                        </set>
+                      </entry>
+                      <entry>
+                        <makingGame.interactions.events.conditionals.Conditionals reference="../../../../../../triggers/makingGame.interactions.events.conditionals.Conditionals"/>
+                        <set reference="../../../../../../actionmap/entry[2]/set"/>
+                      </entry>
+                      <entry>
+                        <makingGame.interactions.events.conditionals.Conditionals reference="../../../../../../../../FSM.presetFSMs.LeftRightFSM/currentstate/transitionmap/entry/FSM.FSM__State/triggers/makingGame.interactions.events.conditionals.Conditionals[3]"/>
+                        <set>
+                          <makingGame.interactions.action.NumericalAction>
+                            <entityToAffect></entityToAffect>
+                            <propertyToBeModified>xScale</propertyToBeModified>
+                            <valueToUse>1</valueToUse>
+                            <myOperator>=</myOperator>
+                          </makingGame.interactions.action.NumericalAction>
+                          <makingGame.interactions.action.NumericalAction>
+                            <entityToAffect></entityToAffect>
+                            <propertyToBeModified>currentImageIndex</propertyToBeModified>
+                            <valueToUse>1</valueToUse>
+                            <myOperator>=</myOperator>
+                          </makingGame.interactions.action.NumericalAction>
+                        </set>
+                      </entry>
+                    </actionmap>
+                    <transitionmap>
+                      <entry>
+                        <makingGame.interactions.events.conditionals.Conditionals reference="../../../triggers/makingGame.interactions.events.conditionals.Conditionals[2]"/>
+                        <FSM.FSM__State reference="../../../../../.."/>
+                      </entry>
+                      <entry>
+                        <makingGame.interactions.events.conditionals.Conditionals reference="../../../../../../triggers/makingGame.interactions.events.conditionals.Conditionals"/>
+                        <FSM.FSM__State>
+                          <statename>leftright</statename>
+                          <triggers>
+                            <makingGame.interactions.events.conditionals.Conditionals>
+                              <Signatures>
+                                <string>KeyInput</string>
+                                <string>Up</string>
+                                <string>released</string>
+                              </Signatures>
+                            </makingGame.interactions.events.conditionals.Conditionals>
+                            <makingGame.interactions.events.conditionals.Conditionals reference="../../../../../triggers/makingGame.interactions.events.conditionals.Conditionals[2]"/>
+                            <makingGame.interactions.events.conditionals.Conditionals reference="../../../../../../../../../../FSM.presetFSMs.LeftRightFSM/currentstate/transitionmap/entry/FSM.FSM__State/triggers/makingGame.interactions.events.conditionals.Conditionals[3]"/>
+                          </triggers>
+                          <actionmap>
+                            <entry>
+                              <makingGame.interactions.events.conditionals.Conditionals reference="../../../../../../triggers/makingGame.interactions.events.conditionals.Conditionals[2]"/>
+                              <set reference="../../../../../../../../../actionmap/entry[2]/set"/>
+                            </entry>
+                            <entry>
+                              <makingGame.interactions.events.conditionals.Conditionals reference="../../../triggers/makingGame.interactions.events.conditionals.Conditionals"/>
+                              <set reference="../../../../../../../../../actionmap/entry/set"/>
+                            </entry>
+                            <entry>
+                              <makingGame.interactions.events.conditionals.Conditionals reference="../../../../../../../../../../../FSM.presetFSMs.LeftRightFSM/currentstate/transitionmap/entry/FSM.FSM__State/triggers/makingGame.interactions.events.conditionals.Conditionals[3]"/>
+                              <set>
+                                <makingGame.interactions.action.NumericalAction>
+                                  <entityToAffect></entityToAffect>
+                                  <propertyToBeModified>currentImageIndex</propertyToBeModified>
+                                  <valueToUse>1</valueToUse>
+                                  <myOperator>=</myOperator>
+                                </makingGame.interactions.action.NumericalAction>
+                              </set>
+                            </entry>
+                          </actionmap>
+                          <transitionmap>
+                            <entry>
+                              <makingGame.interactions.events.conditionals.Conditionals reference="../../../../../../triggers/makingGame.interactions.events.conditionals.Conditionals[2]"/>
+                              <FSM.FSM__State>
+                                <statename>left</statename>
+                                <triggers>
+                                  <makingGame.interactions.events.conditionals.Conditionals reference="../../../../../../../../../../../triggers/makingGame.interactions.events.conditionals.Conditionals[2]"/>
+                                  <makingGame.interactions.events.conditionals.Conditionals reference="../../../../../triggers/makingGame.interactions.events.conditionals.Conditionals"/>
+                                  <makingGame.interactions.events.conditionals.Conditionals reference="../../../../../../../../../../../../../FSM.presetFSMs.LeftRightFSM/currentstate/transitionmap/entry/FSM.FSM__State/triggers/makingGame.interactions.events.conditionals.Conditionals[3]"/>
+                                </triggers>
+                                <actionmap>
+                                  <entry>
+                                    <makingGame.interactions.events.conditionals.Conditionals reference="../../../../../../../../../../../../triggers/makingGame.interactions.events.conditionals.Conditionals[2]"/>
+                                    <set reference="../../../../../../../../../../../../actionmap/entry/set"/>
+                                  </entry>
+                                  <entry>
+                                    <makingGame.interactions.events.conditionals.Conditionals reference="../../../../../../triggers/makingGame.interactions.events.conditionals.Conditionals"/>
+                                    <set reference="../../../../../../../../../actionmap/entry/set"/>
+                                  </entry>
+                                  <entry>
+                                    <makingGame.interactions.events.conditionals.Conditionals reference="../../../../../../../../../../../../../../FSM.presetFSMs.LeftRightFSM/currentstate/transitionmap/entry/FSM.FSM__State/triggers/makingGame.interactions.events.conditionals.Conditionals[3]"/>
+                                    <set>
+                                      <makingGame.interactions.action.NumericalAction>
+                                        <entityToAffect></entityToAffect>
+                                        <propertyToBeModified>currentImageIndex</propertyToBeModified>
+                                        <valueToUse>1</valueToUse>
+                                        <myOperator>=</myOperator>
+                                      </makingGame.interactions.action.NumericalAction>
+                                      <makingGame.interactions.action.NumericalAction>
+                                        <entityToAffect></entityToAffect>
+                                        <propertyToBeModified>xScale</propertyToBeModified>
+                                        <valueToUse>-1</valueToUse>
+                                        <myOperator>=</myOperator>
+                                      </makingGame.interactions.action.NumericalAction>
+                                    </set>
+                                  </entry>
+                                </actionmap>
+                                <transitionmap>
+                                  <entry>
+                                    <makingGame.interactions.events.conditionals.Conditionals reference="../../../../../../../../../../../../triggers/makingGame.interactions.events.conditionals.Conditionals[2]"/>
+                                    <FSM.FSM__State reference="../../../../../.."/>
+                                  </entry>
+                                  <entry>
+                                    <makingGame.interactions.events.conditionals.Conditionals reference="../../../../../../triggers/makingGame.interactions.events.conditionals.Conditionals"/>
+                                    <FSM.FSM__State reference="../../../../../../../../../../../.."/>
+                                  </entry>
+                                  <entry>
+                                    <makingGame.interactions.events.conditionals.Conditionals reference="../../../../../../../../../../../../../../FSM.presetFSMs.LeftRightFSM/currentstate/transitionmap/entry/FSM.FSM__State/triggers/makingGame.interactions.events.conditionals.Conditionals[3]"/>
+                                    <FSM.FSM__State reference="../../.."/>
+                                  </entry>
+                                </transitionmap>
+                              </FSM.FSM__State>
+                            </entry>
+                            <entry>
+                              <makingGame.interactions.events.conditionals.Conditionals reference="../../../triggers/makingGame.interactions.events.conditionals.Conditionals"/>
+                              <FSM.FSM__State reference="../../../../../.."/>
+                            </entry>
+                            <entry>
+                              <makingGame.interactions.events.conditionals.Conditionals reference="../../../../../../../../../../../FSM.presetFSMs.LeftRightFSM/currentstate/transitionmap/entry/FSM.FSM__State/triggers/makingGame.interactions.events.conditionals.Conditionals[3]"/>
+                              <FSM.FSM__State reference="../../.."/>
+                            </entry>
+                          </transitionmap>
+                        </FSM.FSM__State>
+                      </entry>
+                      <entry>
+                        <makingGame.interactions.events.conditionals.Conditionals reference="../../../../../../../../FSM.presetFSMs.LeftRightFSM/currentstate/transitionmap/entry/FSM.FSM__State/triggers/makingGame.interactions.events.conditionals.Conditionals[3]"/>
+                        <FSM.FSM__State reference="../../.."/>
+                      </entry>
+                    </transitionmap>
+                  </FSM.FSM__State>
+                </entry>
+                <entry>
+                  <makingGame.interactions.events.conditionals.Conditionals reference="../../../triggers/makingGame.interactions.events.conditionals.Conditionals"/>
+                  <FSM.FSM__State reference="../../entry/FSM.FSM__State/transitionmap/entry[2]/FSM.FSM__State/transitionmap/entry/FSM.FSM__State"/>
+                </entry>
+              </transitionmap>
+            </currentstate>
+          </FSM.presetFSMs.UpDownFSM>
+        </FSMs>
+>>>>>>> 70a29ca724a9f508fc7a65d60acb9d03fd2c24bc
+      </makingGame.entity.Entity>
+    </entry>
+    <entry>
+      <string>levelController</string>
+      <makingGame.entity.LevelController>
+        <myInstances>
+          <entry>
+            <string>lc</string>
+            <map>
+              <entry>
+                <string>xPosition</string>
+                <string>-1000</string>
+              </entry>
+              <entry>
+                <string>xVelocity</string>
+                <string>0</string>
+              </entry>
+              <entry>
+                <string>onScreen</string>
+                <string>0</string>
+              </entry>
+              <entry>
+                <string>yAcceleration</string>
+                <string>0</string>
+              </entry>
+              <entry>
+                <string>level</string>
+                <string>0</string>
+              </entry>
+              <entry>
+                <string>imagePath</string>
+                <string>mario.png</string>
+              </entry>
+              <entry>
+                <string>currentImageIndex</string>
+                <string>0</string>
+              </entry>
+              <entry>
+                <string>yPosition</string>
+                <string>-1000</string>
+              </entry>
+              <entry>
+                <string>xScale</string>
+                <string>1</string>
+              </entry>
+              <entry>
+                <string>yVelocity</string>
+                <string>0</string>
+              </entry>
+              <entry>
+                <string>xAcceleration</string>
+                <string>0</string>
+              </entry>
+            </map>
+          </entry>
+        </myInstances>
+        <entityType>levelController</entityType>
+        <defaultProperties>
+          <javafx.util.Pair>
+            <key class="string">xPosition</key>
+            <value class="string">0</value>
+          </javafx.util.Pair>
+          <javafx.util.Pair>
+            <key class="string">yPosition</key>
+            <value class="string">0</value>
+          </javafx.util.Pair>
+          <javafx.util.Pair>
+            <key class="string">xVelocity</key>
+            <value class="string">0</value>
+          </javafx.util.Pair>
+          <javafx.util.Pair>
+            <key class="string">yVelocity</key>
+            <value class="string">0</value>
+          </javafx.util.Pair>
+          <javafx.util.Pair>
+            <key class="string">xAcceleration</key>
+            <value class="string">0</value>
+          </javafx.util.Pair>
+          <javafx.util.Pair>
+            <key class="string">yAcceleration</key>
+            <value class="string">0</value>
+          </javafx.util.Pair>
+          <javafx.util.Pair>
+            <key class="string">imagePath</key>
+            <value class="string">mario.png</value>
+          </javafx.util.Pair>
+          <javafx.util.Pair>
+            <key class="string">onScreen</key>
+            <value class="string">0</value>
+          </javafx.util.Pair>
+          <javafx.util.Pair>
+            <key class="string">level</key>
+            <value class="string">0</value>
+          </javafx.util.Pair>
+          <javafx.util.Pair>
+            <key class="string">currentImageIndex</key>
+            <value class="string">0</value>
+          </javafx.util.Pair>
+          <javafx.util.Pair>
+            <key class="string">xScale</key>
+            <value class="string">1</value>
+          </javafx.util.Pair>
+          <javafx.util.Pair>
+            <key class="string">xPosition</key>
+            <value class="string">-1000</value>
+          </javafx.util.Pair>
+          <javafx.util.Pair>
+            <key class="string">yPosition</key>
+            <value class="string">-1000</value>
+          </javafx.util.Pair>
+        </defaultProperties>
+        <FSMs/>
+      </makingGame.entity.LevelController>
+    </entry>
+  </myEntities>
+  <mainCharacterMap>
+    <entry>
+      <string>0</string>
+      <javafx.util.Pair>
+        <key class="string">Isaac</key>
+        <value class="string">i1</value>
+      </javafx.util.Pair>
+    </entry>
+  </mainCharacterMap>
+  <myEventPackages>
+    <entry>
+      <string>Isaac</string>
+      <list>
+        <makingGame.interactions.events.EventPackage>
+          <myConditions>
+            <entry>
+              <string>SPACE</string>
+              <makingGame.interactions.events.Conditions.KeyInputCondition>
+                <myConditions>
+                  <entry>
+                    <string>Inverse</string>
+                    <boolean>false</boolean>
+                  </entry>
+                  <entry>
+                    <string>KeyCodes</string>
+                    <list>
+                      <string>A</string>
+                    </list>
+                  </entry>
+                </myConditions>
+              </makingGame.interactions.events.Conditions.KeyInputCondition>
+            </entry>
+          </myConditions>
+          <myActions>
+            <entry>
+              <string>munching</string>
+              <makingGame.interactions.action.StringAction>
+                <entityToAffect>MYSELF</entityToAffect>
+                <propertyToBeModified>imagePath</propertyToBeModified>
+                <valueToUse>munching.gif</valueToUse>
+              </makingGame.interactions.action.StringAction>
+            </entry>
+            <entry>
+              <string>attackOn</string>
+              <makingGame.interactions.action.StringAction>
+                <entityToAffect>MYSELF</entityToAffect>
+                <propertyToBeModified>state</propertyToBeModified>
+                <valueToUse>attacking</valueToUse>
+              </makingGame.interactions.action.StringAction>
+            </entry>
+          </myActions>
+          <myId>startAttacking</myId>
+          <priority>0</priority>
+        </makingGame.interactions.events.EventPackage>
+        <makingGame.interactions.events.EventPackage>
+          <myConditions>
+            <entry>
+              <string>notSPACE</string>
+              <makingGame.interactions.events.Conditions.KeyInputCondition>
+                <myConditions>
+                  <entry>
+                    <string>Inverse</string>
+                    <boolean>false</boolean>
+                  </entry>
+                  <entry>
+                    <string>KeyCodes</string>
+                    <list>
+                      <string>D</string>
+                    </list>
+                  </entry>
+                </myConditions>
+              </makingGame.interactions.events.Conditions.KeyInputCondition>
+            </entry>
+          </myConditions>
+          <myActions>
+            <entry>
+              <string>attackOff</string>
+              <makingGame.interactions.action.StringAction>
+                <entityToAffect>MYSELF</entityToAffect>
+                <propertyToBeModified>state</propertyToBeModified>
+                <valueToUse>notattacking</valueToUse>
+              </makingGame.interactions.action.StringAction>
+            </entry>
+            <entry>
+              <string>isaacImg</string>
+              <makingGame.interactions.action.StringAction>
+                <entityToAffect>MYSELF</entityToAffect>
+                <propertyToBeModified>imagePath</propertyToBeModified>
+                <valueToUse>Isaac.png</valueToUse>
+              </makingGame.interactions.action.StringAction>
+            </entry>
+          </myActions>
+          <myId>stopAttacking</myId>
+          <priority>0</priority>
+        </makingGame.interactions.events.EventPackage>
+      </list>
+    </entry>
+    <entry>
+      <string>levelController</string>
+      <list/>
+    </entry>
+  </myEventPackages>
+  <myScreenSize>
+    <key class="double">1280.0</key>
+    <value class="double">640.0</value>
+  </myScreenSize>
+  <myBackgroundImagePath>
+    <entry>
+      <string>0</string>
+      <string>dungeon_tile.png</string>
+    </entry>
+  </myBackgroundImagePath>
+</makingGame.managers.EntityManager>

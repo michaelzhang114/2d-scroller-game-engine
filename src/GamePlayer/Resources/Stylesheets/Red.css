@@ -1,0 +1,57 @@
+.root {
+    -fx-font-size: 12pt;
+    -fx-font-family: "Georgia";
+    -fx-background: #800020;
+}
+
+.button {
+    -fx-font-size: 12pt;
+    -fx-background-color: #DAA520;
+    -fx-border-color: #000000;
+    -fx-border-width: 1;
+    -fx-padding: 5;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+}
+
+.button:hover {
+    -fx-background-color: #FFD700;
+}
+
+.tab-pane {
+    -fx-tab-min-width:143px;
+    -fx-tab-min-height:20px;
+}
+
+.tab {
+    -fx-font-size: 12pt;
+    -fx-font-family: "Georgia";
+    -fx-background-color: #DAA520;
+    -fx-text-base-color: #800020;
+    -fx-border-radius: 15 15 0 0;
+    -fx-background-radius: 15 15 0 0;
+}
+
+.tab:selected {
+    -fx-background-color: #FFD700;
+    -fx-font-weight: bold;
+}
+
+.friends-tab > .button {
+    -fx-background-radius: 0 0 0 0;
+    -fx-border-radius: 0 0 0 0;
+    -fx-pref-width: 165px;
+    -fx-pref-height:20px;
+}
+
+.message-received {
+    -fx-background-color: #b24662;
+    -fx-padding: 1 5 1 5;
+    -fx-text-fill: #000000;
+}
+
+.message-sent {
+    -fx-background-color: #DAA520;
+    -fx-padding: 1 5 1 5;
+    -fx-text-fill: #000000;
+}
